@@ -1,6 +1,11 @@
-body{
-    font-family: 'Roboto', sans-serif;
+body {
+  font-family: "Roboto", sans-serif;
 }
-.heading{
-    font-family: 'Shrikhand', cursive;
+
+* {
+  box-sizing: border-box;
+}
+
+.heading {
+  font-family: "Shrikhand", cursive;
 }

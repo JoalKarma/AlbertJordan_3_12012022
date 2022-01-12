@@ -1,0 +1,9 @@
+@import "./utils/variables";
+@import "./base/typography";
+
+* {
+    box-sizing: border-box;
+}
+.heading{
+    font-family: 'Shrikhand', cursive;    
+}
