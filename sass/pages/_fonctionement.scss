@@ -1,0 +1,20 @@
+.fonctionement{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 70px;
+    margin-top: 40px;
+    &_heading{
+        margin-bottom: 30px;
+    }
+    &_list li{
+        list-style-type: none;
+        padding: 20px 0px 20px 0px;
+        @include color-lighten ($color-background); 
+        margin-bottom: 15px;
+        border-radius: 15px;
+        box-shadow: 0px 0px 7px $color-shadow;
+    }
+    &_icon{
+         margin: 0px 15px 0px 30px;
+    }
+}

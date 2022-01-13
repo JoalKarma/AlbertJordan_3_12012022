@@ -1,11 +1,5 @@
 *{
     box-sizing: border-box;
-}
-body{
-    width: 100%;
-    margin: auto;
-    font-family: "Roboto", sans-serif;
-}
 
 @import "./utils/functions";
 @import "./utils/variables";
@@ -15,5 +9,19 @@ body{
 @import "./layout/header";
 @import "./layout/form";
 @import "./pages/entete";
+@import "./layout/button_entête";
+@import "./pages/fonctionement";
+@import "./pages/restaurant";
 
-
+}
+body{
+    width: 100%;
+    margin: auto;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;  
+}
+a{
+    text-decoration: none;
+    color: black;
+}

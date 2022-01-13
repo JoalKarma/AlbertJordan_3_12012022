@@ -7,7 +7,7 @@
 }
 @mixin color-lighten ($color){
     @if ( lightness($color) > 80%){
-        $color: lighten($color, 8%)
+        $color: lighten($color, 5%)
     }
     background-color: $color;    
 }
