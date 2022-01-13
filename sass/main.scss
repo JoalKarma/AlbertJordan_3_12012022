@@ -1,9 +1,19 @@
-@import "./utils/variables";
-@import "./base/typography";
-
-* {
+*{
     box-sizing: border-box;
 }
-.heading{
-    font-family: 'Shrikhand', cursive;    
+body{
+    width: 100%;
+    margin: auto;
+    font-family: "Roboto", sans-serif;
 }
+
+@import "./utils/functions";
+@import "./utils/variables";
+@import "./utils/list&map";
+@import "./utils/mixin";
+
+@import "./layout/header";
+@import "./layout/form";
+@import "./pages/entete";
+
+

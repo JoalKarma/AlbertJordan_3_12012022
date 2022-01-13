@@ -1,0 +1,13 @@
+.search{
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+    background-color: #DEDEE2;
+    @include display{
+        justify-content: center;
+    }
+}
+.search_bar{
+    border-style: none;
+    font-weight: bold;
+    background-color: $background-search;
+}

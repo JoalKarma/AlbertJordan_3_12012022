@@ -1,0 +1,13 @@
+@mixin display {
+    display: flex;
+    @content;
+}
+@mixin logotitre {
+    font-family: 'Shrikhand', cursive;
+}
+@mixin color-lighten ($color){
+    @if ( lightness($color) > 80%){
+        $color: lighten($color, 8%)
+    }
+    background-color: $color;    
+}
