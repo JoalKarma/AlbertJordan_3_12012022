@@ -1,19 +1,7 @@
 *{
     box-sizing: border-box;
-
-@import "./utils/functions";
-@import "./utils/variables";
-@import "./utils/list&map";
-@import "./utils/mixin";
-
-@import "./layout/header";
-@import "./layout/form";
-@import "./pages/entete";
-@import "./layout/button_entête";
-@import "./pages/fonctionement";
-@import "./pages/restaurant";
-
 }
+
 body{
     width: 100%;
     margin: auto;
@@ -25,3 +13,20 @@ a{
     text-decoration: none;
     color: black;
 }
+
+@import "./utils/functions";
+@import "./utils/variables";
+@import "./utils/list&map";
+@import "./utils/mixin";
+@import "./utils/each";
+
+@import "./pages/header";
+@import "./layout/form";
+@import "./pages/entete";
+@import "./layout/button";
+@import "./pages/fonctionement";
+@import "./pages/restaurant";
+@import "./pages/footer";
+
+@import "./pages/header_menu";
+@import "./pages/menu";

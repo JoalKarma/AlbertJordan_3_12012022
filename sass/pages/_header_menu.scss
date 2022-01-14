@@ -1,0 +1,15 @@
+.header_menu{
+    @include display{
+        flex-direction: row;
+        align-items: center;
+        padding: 10px 10px 10px 20px;
+    }
+    > a{
+        margin-right: 80px;
+    }
+    > img{
+        width: 40%;
+    }
+
+
+}

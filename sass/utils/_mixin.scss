@@ -11,3 +11,9 @@
     }
     background-color: $color;    
 }
+@mixin color-darken ($color){
+    @if (lightness($color) > 80%){
+        $color: darken($color, 20%)
+    }
+    background: linear-gradient(to top, $color-background 35px, $color);
+}

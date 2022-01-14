@@ -1,0 +1,96 @@
+#bloc_menu{
+    @include color-lighten ($color-background);
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 30px 0px;
+    > a{
+        @include display{
+            justify-content: center;
+        }
+    }
+
+}
+.menu{
+        @include display{
+        flex-direction: column;
+    }
+    height: 330px;
+    width: 100%;
+    overflow: hidden;  
+    margin-bottom: 30px;
+    position: relative;
+    &_image{ 
+        height: 250px;
+        width: 120%;
+        object-fit: cover;
+        display: none;
+    }
+    &_heading{
+        @include display{
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        @include logotitre;
+        @include color-lighten($color-background);
+        padding: 0px 45px 0px 30px;
+        width: 100%;
+        margin: 0px 0px 0px 0px;
+        height: 25%;
+        font-size: 1.6rem;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        position: absolute;
+        bottom: 0;
+    }
+
+}
+@each $key, $val in $backg-menu{
+    .bckg_#{$key} {
+        background-image: $val;
+        background-size: cover;
+    }
+}
+.card{
+    @include display{
+        flex-direction: column;
+    }
+    width: 90%;
+    margin: auto;
+    &_container{
+        @include display{
+            flex-direction: column;
+        }
+        margin-bottom: 20px;
+    }
+    &_heading{
+        margin-bottom: 20px;
+        padding-bottom: 5px;
+        > span{
+        border-bottom: 3px $color-tertiary solid;
+        padding-bottom: 5px;
+        }
+    }
+    &_description{
+        @include display{
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: 0px 0px 7px $color-shadow;
+        margin-bottom: 15px;
+        padding: 10px 10px 10px 10px;
+    }
+    &_plate{
+        font-weight: bolder;
+    }
+    &_platebis{
+        margin-top: 3px;
+        margin-bottom: 0px;
+    }
+    &_price{
+        font-weight: bold;
+    }
+}
+

@@ -5,7 +5,7 @@ form{
 .search{
     width: 100%;
     padding: 10px 0px 10px 0px;
-    background-color: $color-background;
+    @include color-darken ($color-background);
     @include display{
         justify-content: center;
     }
