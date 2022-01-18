@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="./public/css/style.css"> 
-    <script src="https://kit.fontawesome.com/e0fc7fcfe4.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/e0fc7fcfe4.js" crossorigin="anonymous"></script> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <title>OhMyFood, La note enchantée.</title>
 </head>
 <body>
@@ -27,15 +27,20 @@
                 <img class="menu_image" src="./public/image/La note enchantée.jpg" alt="">
                 <div class="menu_heading">
                     <span>La note enchantée</span>
-                    <i class="far fa-heart"></i>
+                    <div class="like">                            
+                        <i class="like_empty far fa-heart"></i>                
+                        <i class="like_plein fas fa-heart"></i>     
+                    </div>
                 </div>
             </div>
 
-            <div class="card">
-                <div class="card_container">
-                    <div class="card_heading">
-                        <span>ENTRÉES</span>
-                    </div>
+            <div class="container">
+                <div class="card_heading">
+                    <span>ENTRÉES</span>
+                </div>
+
+                <div class="card">
+                    
                     <div class="card_description">
                         <div class="card_name">
                             <span class="card_plate">Ravioles de foie gras</span>
@@ -44,18 +49,28 @@
                         <div class="card_price">
                             <span>25€</span>
                         </div>
+                        <div class="card_confirmation">
+                            <i class="card_icon fas fa-check-circle"></i>
+                        </div>
                     </div>
-        
+                </div>
+
+                <div class="card">
                     <div class="card_description">
                         <div class="card_name">
                             <span class="card_plate">Caviar osciètre</span>
                             <p class="card_platebis">Sur blini à la farine de blè noir</p>
                         </div>
-                        <div class="card_price">
+                        <div class="card_price">  
                             <span>35€</span>
                         </div>
+                        <div class="card_confirmation">
+                            <i class="card_icon fas fa-check-circle"></i>
+                        </div>
                     </div>
-        
+                </div>
+
+                <div class="card">
                     <div class="card_description">
                         <div class="card_name">
                             <span class="card_plate">Homard et espuma de potiron</span>
@@ -64,8 +79,13 @@
                         <div class="card_price">
                             <span>20€</span>
                         </div>
+                        <div class="card_confirmation">
+                            <i class="card_icon fas fa-check-circle"></i>
+                        </div>
                     </div>
-                    
+                </div>
+
+                <div class="card">
                     <div class="card_description">
                         <div class="card_name">
                             <span class="card_plate">Foie gras de canard cuit entier</span>
@@ -74,13 +94,18 @@
                         <div class="card_price">
                             <span>35€</span>
                         </div>
+                        <div class="card_confirmation">
+                            <i class="card_icon fas fa-check-circle"></i>
+                        </div>
                     </div>
                 </div>
-        
+                
                 <div class="card_heading">
-                    <div class="card_heading">
-                        <span>PLATS</span>
-                    </div>
+                    <span>PLATS</span>
+                </div>
+                
+                <div class="card">
+                    
                     <div class="card_description">
                         <div class="card_name">
                             <span class="card_plate">Noix de coquille Saint-Jacques</span>
@@ -89,8 +114,13 @@
                         <div class="card_price">
                             <span>40€</span>
                         </div>
+                        <div class="card_confirmation">
+                            <i class="card_icon fas fa-check-circle"></i>
+                        </div>
                     </div>
-        
+                </div>
+
+                <div class="card">
                     <div class="card_description">
                         <div class="card_name">
                             <span class="card_plate">Langoustine poêlée</span>
@@ -99,8 +129,13 @@
                         <div class="card_price">
                             <span>35€</span>
                         </div>
+                        <div class="card_confirmation">
+                            <i class="card_icon fas fa-check-circle"></i>
+                        </div>
                     </div>
-        
+                </div>
+
+                <div class="card">
                     <div class="card_description">
                         <div class="card_name">
                             <span class="card_plate">Mijoté de queu de boeuf</span>
@@ -109,13 +144,18 @@
                         <div class="card_price">
                             <span>44€</span>
                         </div>
+                        <div class="card_confirmation">
+                            <i class="card_icon fas fa-check-circle"></i>
+                        </div>
                     </div>    
                 </div>
-        
+
                 <div class="card_heading">
-                    <div class="card_heading">
-                        <span>DESSERT</span>
-                    </div>
+                    <span>DESSERT</span>
+                </div>
+
+                <div class="card">
+                    
                     <div class="card_description">
                         <div class="card_name">
                             <span class="card_plate">Macaron noisette et chocolat</span>
@@ -124,8 +164,13 @@
                         <div class="card_price">
                             <span>18€</span>
                         </div>
+                        <div class="card_confirmation">
+                            <i class="card_icon fas fa-check-circle"></i>
+                        </div>
                     </div>
+                </div>
         
+                <div class="card">
                     <div class="card_description">
                         <div class="card_name">
                             <span class="card_plate">Baba au rhum revisitée</span>
@@ -134,8 +179,13 @@
                         <div class="card_price">
                             <span>22€</span>
                         </div>
+                        <div class="card_confirmation">
+                            <i class="card_icon fas fa-check-circle"></i>
+                        </div>
                     </div>
-        
+                </div>
+
+                <div class="card">
                     <div class="card_description">
                         <div class="card_name">
                             <span class="card_plate">Tarte au citron meringuée</span>
@@ -144,17 +194,21 @@
                         <div class="card_price">
                             <span>23€</span>
                         </div>
+                        <div class="card_confirmation">
+                            <i class="card_icon fas fa-check-circle"></i>
+                        </div>
                     </div>    
                 </div>
         
                 
             </div>
 
-            <a href="#">
-                <button class="commande_button">
+            
+            <div>
+                <button class="button">
                     <span>Commander</span>
-                </button>
-            </a>
+                </button>  
+            </div>  
 
         </div>
 

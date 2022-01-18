@@ -2,12 +2,10 @@
     @include color-lighten ($color-background);
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 30px 0px;
-    > a{
-        @include display{
-            justify-content: center;
+    @include display{
+            flex-direction: column;            
+            align-items: center;
         }
-    }
-
 }
 .menu{
         @include display{
@@ -16,7 +14,7 @@
     height: 330px;
     width: 100%;
     overflow: hidden;  
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     position: relative;
     &_image{ 
         height: 250px;
@@ -27,12 +25,11 @@
     &_heading{
         @include display{
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: space-around;
             align-items: center;
         }
         @include logotitre;
         @include color-lighten($color-background);
-        padding: 0px 45px 0px 30px;
         width: 100%;
         margin: 0px 0px 0px 0px;
         height: 25%;
@@ -41,27 +38,26 @@
         border-top-right-radius: 50px;
         position: absolute;
         bottom: 0;
+        
     }
 
 }
-@each $key, $val in $backg-menu{
-    .bckg_#{$key} {
-        background-image: $val;
-        background-size: cover;
-    }
-}
-.card{
+@include back-image;
+.container{
     @include display{
         flex-direction: column;
     }
     width: 90%;
     margin: auto;
-    &_container{
-        @include display{
-            flex-direction: column;
-        }
-        margin-bottom: 20px;
+}
+
+
+.card{
+    @include display{
+        flex-direction: column;
     }
+    margin-bottom: 10px;
+    
     &_heading{
         margin-bottom: 20px;
         padding-bottom: 5px;
@@ -71,26 +67,62 @@
         }
     }
     &_description{
-        @include display{
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: flex-end;
-        }
+        @include display;
         background-color: white;
         border-radius: 15px;
         box-shadow: 0px 0px 7px $color-shadow;
-        margin-bottom: 15px;
-        padding: 10px 10px 10px 10px;
+        
+        padding: 10px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        max-width: 100%;
+        cursor: pointer;
+    }
+    &_name{
+        flex: 1;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
     &_plate{
-        font-weight: bolder;
+        font-weight: bold;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        margin-bottom: 3px;
     }
     &_platebis{
-        margin-top: 3px;
-        margin-bottom: 0px;
-    }
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    } 
     &_price{
         font-weight: bold;
+        padding: 0px 10px 0px 0px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+    } 
+    &_confirmation{
+        background-color: $color-tertiary;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 4.5rem;
+        margin: -1rem -5rem -1rem 0.5rem;
+        width: 4rem;
+        transition: margin-right 600ms; 
+    }
+    &:hover &_confirmation{
+        margin-right: -1rem;
+    }
+    &_icon{
+        color: white;
+        transform: rotate(360deg);
+        transition: transform 800ms;
+    }
+    &:hover &_icon{
+        transform: rotate(0)
     }
 }
-

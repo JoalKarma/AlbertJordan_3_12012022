@@ -20,6 +20,7 @@
     list         = <i class="fas fa-list-ul"></i>
     shop         = <i class="fas fa-store"></i>
     heart        = <i class="far fa-heart"></i>
+    heart2       = <i class="fas fa-heart"></i>
     cuttelry     = <i class="fas fa-utensils"></i>
     handshake    = <i class="fas fa-hands-helping"></i>
     arrow-left   = <i class="fas fa-arrow-left"></i>
@@ -42,11 +43,11 @@
             <p class="entête__heading">Réserver le menu qui <br> vous convient</p>
             <p class="entête__slogan">Découvrez des restaurants d'exception, <br> séléctionnér par nos soins.</p>
                 
-            <a href="#restaurant">
-                <button class="entête_button">
-                    <span>Explorer nos restaurants</span>
-                </button>
-            </a>
+            
+            <button class="button">
+                <p>Explorer nos restaurants</p>
+            </button>
+            
         </section>
 
         <section class="fonctionement flex">
@@ -56,9 +57,27 @@
             </div>
 
             <ul class="flex fonctionement_list">
-                <li><i class="fas fa-mobile-alt fonctionement_icon"></i>Choisissez un restaurant</li>
-                <li><i class="fas fa-list-ul fonctionement_icon"></i>Composer votre menu</li>
-                <li><i class="fas fa-store fonctionement_icon"></i>Dégustez au restaurant</li>
+                <a href="#"><li>
+                    <span class="fonctionement_number">1</span>
+                    <div>
+                    <i class="fas fa-mobile-alt fonctionement_icon"></i>
+                    Choisissez un restaurant
+                    </div>
+                </li></a>
+                <a href="#"><li>
+                    <span class="fonctionement_number">2</span>
+                    <div>
+                    <i class="fas fa-list-ul fonctionement_icon"></i>
+                    Composer votre menu
+                </div>
+                </li></a>
+                <a href="#"><li>
+                    <span class="fonctionement_number">3</span>
+                    <div>
+                    <i class="fas fa-store fonctionement_icon"></i>
+                    Dégustez au restaurant
+                </div>
+                </li></a>
             </ul>        
     
         </section>
@@ -69,61 +88,65 @@
 
             <div class="restaurant_container flex">
 
-                <a href="./lapalettedugout.html" class="restaurant_card flex">
+                <a href="./lapalettedugout.html" class="restaurant_card bckg_3">
                     <img src="./public/image/La palette de goût.jpg" alt="image plat vue sur main" class="restaurant_image"height="500" width="500">
+                    <div class="restaurant_new">
+                        Nouveau
+                    </div>
                     <div class="restaurant_description flex">
                         <div class="restaurant_description_heading">
                             <p class="strong">La palette du gôut</p>
                             <p>Ménilmontant</p>
                         </div>
-
-                        <div class="like">
-                            <i class="far fa-heart"></i> 
+                        <div class="like">                            
+                                <i class="like_empty far fa-heart"></i>                
+                                <i class="like_plein fas fa-heart"></i>     
                         </div>
-
                     </div>
                 </a>
 
-                <a href="./lanoteenchantée.html" class="restaurant_card flex">
+                <a href="./lanoteenchantée.html" class="restaurant_card bckg_2">
                     <img src="./public/image/La note enchantée.jpg" alt="image plat vue de haut" class="restaurant_image" height="500" width="500">
+                    <div class="restaurant_new">
+                        Nouveau
+                    </div>
                     <div class="restaurant_description flex">
                         <div class="restaurant_description_heading">
                             <p class="strong">La note enchantée</p>
                             <p>Charonne</p>
                         </div>
-                        <div class="like">
-                            <i class="far fa-heart"></i> 
+                        <div class="like">                            
+                            <i class="like_empty far fa-heart"></i>                
+                            <i class="like_plein fas fa-heart"></i>     
                         </div>
                     </div>
                 </a>
 
-                <a href="./àlafrançaise.html" class="restaurant_card flex">
+                <a href="./àlafrançaise.html" class="restaurant_card bckg_1">
                     <img src="./public/image/A la française.jpg" alt="image plat avec deux oeufs" class="restaurant_image" height="500" width="500">
                     <div class="restaurant_description flex">
                         <div class="restaurant_description_heading">
                             <p class="strong">À la française</p>
                             <p>Cité Rouge</p>
                         </div>
-
-                        <div class="like">
-                            <i class="far fa-heart"></i> 
+                        <div class="like">                            
+                            <i class="like_empty far fa-heart"></i>                
+                            <i class="like_plein fas fa-heart"></i>     
                         </div>
-
                     </div>
                 </a>
 
-                <a href="./ledélicedessens.html" class="restaurant_card flex">
+                <a href="./ledélicedessens.html" class="restaurant_card bckg_4">
                     <img src="./public/image/Le delice des sens.jpg" alt="image plat rectangle" class="restaurant_image" height="500" width="500">
                     <div class="restaurant_description flex">
                         <div class="restaurant_description_heading">
                             <p class="strong">Le délice des sens</p>
                             <p>Folie-Méricourt</p>
                         </div>
-
-                        <div class="like">
-                            <i class="far fa-heart like_img"></i> 
+                        <div class="like">                            
+                            <i class="like_empty far fa-heart"></i>                
+                            <i class="like_plein fas fa-heart"></i>     
                         </div>
-
                     </div>
                 </a>
 

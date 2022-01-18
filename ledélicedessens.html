@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="./public/css/style.css"> 
-    <script src="https://kit.fontawesome.com/e0fc7fcfe4.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/e0fc7fcfe4.js" crossorigin="anonymous"></script> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">  
     <title>OhMyFood, Le délice des sens.</title>
 </head>
 <body>
@@ -27,15 +27,20 @@
                 <img class="menu_image" src="./public/image/Le delice des sens.jpg" alt="">
                 <div class="menu_heading">
                     <span>Le délice des sens</span>
-                    <i class="far fa-heart"></i>
+                    <div class="like">                            
+                        <i class="like_empty far fa-heart"></i>                
+                        <i class="like_plein fas fa-heart"></i>     
+                    </div>
                 </div>
             </div>
 
-            <div class="card">
-                <div class="card_container">
-                    <div class="card_heading">
-                        <span>ENTRÉES</span>
-                    </div>
+            <div class="container">
+                <div class="card_heading">
+                    <span>ENTRÉES</span>
+                </div>
+                
+                <div class="card">
+                    
                     <div class="card_description">
                         <div class="card_name">
                             <span class="card_plate">Tartare de thon</span>
@@ -44,8 +49,13 @@
                         <div class="card_price">
                             <span>25€</span>
                         </div>
+                        <div class="card_confirmation">
+                            <i class="card_icon fas fa-check-circle"></i>
+                        </div>
                     </div>
+                </div>
 
+                <div class="card">
                     <div class="card_description">
                         <div class="card_name">
                             <span class="card_plate">Bouchée de homard croustillant</span>
@@ -54,8 +64,14 @@
                         <div class="card_price">
                             <span>35€</span>
                         </div>
+                        <div class="card_confirmation">
+                        <i class="card_icon fas fa-check-circle"></i>
                     </div>
+                </div>
+                    
+                </div>
 
+                <div class="card">
                     <div class="card_description">
                         <div class="card_name">
                             <span class="card_plate">Velouté de cèpes</span>
@@ -64,13 +80,19 @@
                         <div class="card_price">
                             <span>20€</span>
                         </div>
+                        <div class="card_confirmation">
+                            <i class="card_icon fas fa-check-circle"></i>
+                        </div>
                     </div>    
                 </div>
+                
+                <div class="card_heading">
+                    <span>PLATS</span>
+                </div>  
 
-                <div class="card_container">
-                    <div class="card_heading">
-                        <span>PLATS</span>
-                    </div>
+                <div class="card">
+                    
+                    
                     <div class="card_description">
                         <div class="card_name">
                             <span class="card_plate">Poulet rôti aux herbes de provence</span>
@@ -79,8 +101,13 @@
                         <div class="card_price">
                             <span>40€</span>
                         </div>
+                        <div class="card_confirmation">
+                            <i class="card_icon fas fa-check-circle"></i>
+                        </div>
                     </div>
+                </div>
 
+                <div class="card">
                     <div class="card_description">
                         <div class="card_name">
                             <span class="card_plate">Langouste rôtie</span>
@@ -89,8 +116,13 @@
                         <div class="card_price">
                             <span>35€</span>
                         </div>
+                        <div class="card_confirmation">
+                            <i class="card_icon fas fa-check-circle"></i>
+                        </div>
                     </div>
+                </div>
 
+                <div class="card">
                     <div class="card_description">
                         <div class="card_name">
                             <span class="card_plate">Côte de boeuf angus</span>
@@ -99,13 +131,17 @@
                         <div class="card_price">
                             <span>44€</span>
                         </div>
+                        <div class="card_confirmation">
+                            <i class="card_icon fas fa-check-circle"></i>
+                        </div>
                     </div>    
+                </div>            
+
+                <div class="card_heading">
+                    <span>DESSERT</span>
                 </div>
 
-                <div class="card_container">
-                    <div class="card_heading">
-                        <span>DESSERT</span>
-                    </div>
+                <div class="card">
                     <div class="card_description">
                         <div class="card_name">
                             <span class="card_plate">Farandole de desserts</span>
@@ -114,8 +150,13 @@
                         <div class="card_price">
                             <span>18€</span>
                         </div>
+                        <div class="card_confirmation">
+                            <i class="card_icon fas fa-check-circle"></i>
+                        </div>
                     </div>
+                </div>
 
+                <div class="card">
                     <div class="card_description">
                         <div class="card_name">
                             <span class="card_plate">Crème brulée</span>
@@ -124,8 +165,13 @@
                         <div class="card_price">
                             <span>22€</span>
                         </div>
+                        <div class="card_confirmation">
+                            <i class="card_icon fas fa-check-circle"></i>
+                        </div>
                     </div>
+                </div>
 
+                <div class="card">
                     <div class="card_description">
                         <div class="card_name">
                             <span class="card_plate">Tiramisu</span>
@@ -134,18 +180,19 @@
                         <div class="card_price">
                             <span>23€</span>
                         </div>
+                        <div class="card_confirmation">
+                            <i class="card_icon fas fa-check-circle"></i>
+                        </div>
                     </div>    
-                </div>
+                </div>                
+            </div>        
 
-                
-            </div>
-
-            <a href="#">
-                <button class="commande_button">
+            <div>
+                <button class="button">
                     <span>Commander</span>
-                </button>
-            </a>
-
+                </button>  
+            </div>    
+            
         </div>
 
         <footer class="flex">

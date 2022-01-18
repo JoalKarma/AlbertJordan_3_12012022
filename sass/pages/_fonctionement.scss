@@ -6,13 +6,40 @@
     &_heading{
         margin-bottom: 30px;
     }
+    &_number{
+        background: $color-primary;
+        padding: 5px 10px 5px 10px;
+        color: white;
+        border-radius: 30px;
+        position: absolute;
+
+        
+    }
+    &_list{
+        padding-left: 0px;
+        
+    }
     &_list li{
         list-style-type: none;
-        padding: 20px 0px 20px 0px;
-        @include color-lighten ($color-background); 
+        @include display{
+            flex-direction: row;
+            align-items: center;
+        }
         margin-bottom: 15px;
+        position: relative;
+    }
+    &_list li div{
+        padding: 20px 0px 20px 0px;
+        @include color-lighten($color-background);
         border-radius: 15px;
         box-shadow: 0px 0px 7px $color-shadow;
+        width: 100%;
+        margin-left: 15px;
+        font-weight: bold;
+        transition: background-color 500ms;
+        &:hover{
+            @include color-lighten ($color-primary);
+        }
     }
     &_icon{
          margin: 0px 15px 0px 30px;
