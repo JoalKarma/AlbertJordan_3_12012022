@@ -44,3 +44,14 @@
         -webkit-text-fill-color: transparent;
     }
 }
+
+@keyframes loaderbar{
+    from{
+        transform: scaleX(0);
+        opacity: 0;
+    }
+    to{
+        transform: scaleX(100%);
+        opacity: 1;
+    }
+}
