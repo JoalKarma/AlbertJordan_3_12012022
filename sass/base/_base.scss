@@ -9,25 +9,12 @@
 body{
     width: 100%;
     margin: auto;
-    font-family: "Roboto", sans-serif;
+    font-family: $font-general;
     display: flex;
     flex-direction: column; 
     cursor: default;
     position: relative;
     z-index: 1;
-    /* ::before{
-        content: "";
-        background: white;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: -9999;
-        animation: loading 3s both;
-    } */
 }
 a{
     text-decoration: none;

@@ -1,14 +1,16 @@
-@import "./base/base";
-
+@import "./utils/variables";
 @import "./utils/keyframe";
 @import "./utils/functions";
-@import "./utils/variables";
 @import "./utils/list&map";
 @import "./utils/mixin";
 @import "./utils/each";
 
+@import "./pages/loader";
+@import "./base/base";
+
 @import "./layout/form";
 @import "./layout/button";
+
 
 @import "./pages/header";
 @import "./pages/entete";
