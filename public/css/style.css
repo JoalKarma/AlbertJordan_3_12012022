@@ -14,6 +14,21 @@ body {
   display: flex;
   flex-direction: column;
   cursor: default;
+  position: relative;
+  z-index: 1;
+  /* ::before{
+      content: "";
+      background: white;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -9999;
+      animation: loading 3s both;
+  } */
 }
 
 a {
@@ -21,17 +36,37 @@ a {
   color: black;
 }
 
-#header_acceuil {
-  display: flex;
-  justify-content: center;
-  font-family: "Shrikhand", cursive;
-  padding: 0px 0px 0px 0px;
+@keyframes menu-apparition {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0.3;
+  }
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
 }
-#header_acceuil > img {
-  width: 45%;
-  padding: 10px 0px 10px 0px;
+@keyframes loading {
+  from {
+    opacity: 0.5;
+    z-index: 1;
+  }
+  99% {
+    opacity: 0.5;
+    z-index: 1;
+    transform: translateY(0%);
+  }
+  to {
+    z-index: -9999;
+    transform: translateY(10000%);
+  }
 }
-
 .search {
   width: 100%;
   padding: 10px 0px 10px 0px;
@@ -46,6 +81,28 @@ a {
   border-style: none;
   font-weight: bold;
   background-color: #EAEAEA;
+}
+
+.button {
+  border-style: none;
+  background: linear-gradient(to bottom right, #FF79DA 1px, #9356DC);
+  padding: 15px 30px 15px 30px;
+  margin-top: 20px;
+  color: white;
+  border-radius: 25px;
+  box-shadow: 0px 0px 7px #C1C1C1;
+  cursor: pointer;
+}
+
+#header_acceuil {
+  display: flex;
+  justify-content: center;
+  font-family: "Shrikhand", cursive;
+  padding: 0px 0px 0px 0px;
+}
+#header_acceuil > img {
+  width: 45%;
+  padding: 10px 0px 10px 0px;
 }
 
 .entête {
@@ -66,22 +123,12 @@ a {
   width: 100%;
 }
 
-.button {
-  border-style: none;
-  background: linear-gradient(to bottom right, #FF79DA 1px, #9356DC);
-  padding: 15px 30px 15px 30px;
-  margin-top: 20px;
-  color: white;
-  border-radius: 25px;
-  box-shadow: 0px 0px 7px #C1C1C1;
-  cursor: pointer;
-}
-
 .fonctionement {
   width: 90%;
   margin: auto;
   margin-bottom: 70px;
   margin-top: 40px;
+  z-index: 1;
 }
 .fonctionement_heading {
   margin-bottom: 30px;
@@ -219,36 +266,6 @@ a {
   -webkit-text-fill-color: transparent;
 }
 
-footer {
-  background: #353535;
-}
-footer > ul {
-  width: 90%;
-  margin: auto;
-  list-style-type: none;
-  padding: 20px 0px 20px 0px;
-}
-footer > ul > li {
-  margin-bottom: 9px;
-}
-footer > ul > li > a {
-  color: white;
-}
-
-.logotitre {
-  font-size: 1.3rem;
-  color: white;
-  font-family: "Shrikhand", cursive;
-}
-
-.logo1 {
-  margin-right: 17px;
-}
-
-.logo2 {
-  margin-right: 10px;
-}
-
 .header_menu {
   display: flex;
   flex-direction: row;
@@ -328,12 +345,28 @@ footer > ul > li > a {
   flex-direction: column;
   width: 90%;
   margin: auto;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.anim_1 {
+  animation: menu-apparition 0.5s 3s both;
+}
+.anim_2 {
+  animation: menu-apparition 0.6s 3s both;
+}
+.anim_3 {
+  animation: menu-apparition 0.7s 3s both;
+}
+.anim_4 {
+  animation: menu-apparition 0.8s 3s both;
 }
 
 .card {
+  animation-timing-function: linear;
+  margin-bottom: 10px;
   display: flex;
   flex-direction: column;
-  margin-bottom: 10px;
 }
 .card_heading {
   margin-bottom: 20px;
@@ -395,9 +428,39 @@ footer > ul > li > a {
 }
 .card_icon {
   color: white;
-  transform: rotate(360deg);
+  transform: rotate(-360deg);
   transition: transform 800ms;
 }
 .card:hover .card_icon {
   transform: rotate(0);
+}
+
+footer {
+  background: #353535;
+}
+footer > ul {
+  width: 90%;
+  margin: auto;
+  list-style-type: none;
+  padding: 20px 0px 20px 0px;
+}
+footer > ul > li {
+  margin-bottom: 9px;
+}
+footer > ul > li > a {
+  color: white;
+}
+
+.logotitre {
+  font-size: 1.3rem;
+  color: white;
+  font-family: "Shrikhand", cursive;
+}
+
+.logo1 {
+  margin-right: 17px;
+}
+
+.logo2 {
+  margin-right: 10px;
 }

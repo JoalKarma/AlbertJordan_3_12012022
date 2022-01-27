@@ -49,15 +49,32 @@
     }
     width: 90%;
     margin: auto;
+    padding: 20px;
+    overflow: hidden;
+
+}
+.anim{
+    &_1{
+        animation: menu-apparition 0.5s 3s both;
+    }
+    &_2{    
+        animation: menu-apparition 0.6s 3s both;
+    }
+    &_3{    
+        animation: menu-apparition 0.7s 3s both;
+    }
+    &_4{
+        animation: menu-apparition 0.8s 3s both;
+    }
 }
 
-
 .card{
+    
+    animation-timing-function: linear;
+    margin-bottom: 10px;
     @include display{
         flex-direction: column;
-    }
-    margin-bottom: 10px;
-    
+    }    
     &_heading{
         margin-bottom: 20px;
         padding-bottom: 5px;
@@ -119,7 +136,7 @@
     }
     &_icon{
         color: white;
-        transform: rotate(360deg);
+        transform: rotate(-360deg);
         transition: transform 800ms;
     }
     &:hover &_icon{

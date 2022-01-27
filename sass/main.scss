@@ -1,37 +1,19 @@
-*,
-*::after,
-*::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-}
+@import "./base/base";
 
-body{
-    width: 100%;
-    margin: auto;
-    font-family: "Roboto", sans-serif;
-    display: flex;
-    flex-direction: column; 
-    cursor: default; 
-}
-a{
-    text-decoration: none;
-    color: black;
-}
-
+@import "./utils/keyframe";
 @import "./utils/functions";
 @import "./utils/variables";
 @import "./utils/list&map";
 @import "./utils/mixin";
 @import "./utils/each";
 
-@import "./pages/header";
 @import "./layout/form";
-@import "./pages/entete";
 @import "./layout/button";
+
+@import "./pages/header";
+@import "./pages/entete";
 @import "./pages/fonctionement";
 @import "./pages/restaurant";
-@import "./pages/footer";
-
 @import "./pages/header_menu";
 @import "./pages/menu";
+@import "./pages/footer";

@@ -1,0 +1,31 @@
+@keyframes menu-apparition{
+    from{
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    20%{
+        opacity: 0;
+    }
+    60%{
+        opacity: 0.3;
+    }
+    to{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+@keyframes loading{
+   from{
+       opacity: 0.5;
+       z-index: 1;
+   }
+   99%{
+       opacity: 0.5;
+       z-index: 1;
+       transform: translateY(0%);
+   }
+   to{
+       z-index: -9999;
+       transform: translateY(10000%);
+   }
+}
