@@ -4,10 +4,18 @@
     padding-top: 40px;
     margin-top: 30px;
     margin-bottom: 0px;
+    @media (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+    }
     &_heading{
-        margin-bottom: 30px;
+        padding-bottom: 30px;
         width: 90%;
         margin: auto;
+        @media (min-width:768px) {
+            display: flex;
+            justify-content: center;
+        }
     }
     &_container{
         @include display{
@@ -15,6 +23,11 @@
         }
         width: 90%;
         margin: auto;
+        @media (min-width:768px) {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
     }
     &_card{
         @include display{
@@ -27,6 +40,11 @@
         box-shadow: 0px 0px 3px $color-shadow;
         overflow: hidden;
         position: relative;
+        @media (min-width:768px) {
+            width: 45%;
+            margin: auto;
+            margin-bottom: 20px;
+        }
     }
     &_new{
         position: absolute;

@@ -38,6 +38,7 @@
         border-top-right-radius: 50px;
         position: absolute;
         bottom: 0;
+        letter-spacing: 1px;
         
     }
 
@@ -51,6 +52,18 @@
     margin: auto;
     padding: 20px;
     overflow: hidden;
+    @media (min-width: 992px) {
+        display: flex;
+        flex-direction: row;
+    }
+    > div{
+        margin-bottom: 20px;
+        @media (min-width: 992px) {
+            width: 30%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
 
 }
 .anim{
@@ -79,8 +92,14 @@
         margin-bottom: 20px;
         padding-bottom: 5px;
         > span{
-        border-bottom: 3px $color-tertiary solid;
-        padding-bottom: 5px;
+            display: flex;
+        flex-direction: column;
+        }
+        > span::after{
+            content: "";
+            height: 5px;
+            border-bottom: 3px $color-tertiary solid;
+            width: 40px;            
         }
     }
     &_description{

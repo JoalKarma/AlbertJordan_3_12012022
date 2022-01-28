@@ -4,6 +4,13 @@
     margin-bottom: 70px;
     margin-top: 40px;
     z-index: 1;
+    @media (min-width:768px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+    }
     &_heading{
         margin-bottom: 30px;
     }
@@ -18,9 +25,20 @@
     }
     &_list{
         padding-left: 0px;
+        list-style-type: none;
+        @media (min-width:900px) {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+        }
         
     }
     &_list li{
+        @media (min-width: 810px){
+            margin: auto;
+        }
+    }
+    &_list a{
         list-style-type: none;
         @include display{
             flex-direction: row;
@@ -40,6 +58,12 @@
         transition: background-color 500ms;
         &:hover{
             @include color-lighten ($color-primary);
+        }
+        @media (min-width:768px) {
+            padding: 20px 40px 20px 20px;
+        }
+        @media (min-width: 810px) {
+            padding: 20px 40px 20px 20px;
         }
     }
     &_icon{
