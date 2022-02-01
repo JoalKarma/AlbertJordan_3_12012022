@@ -477,7 +477,6 @@ a {
   height: 250px;
   width: 120%;
   object-fit: cover;
-  display: none;
 }
 .menu_heading {
   display: flex;
@@ -498,22 +497,22 @@ a {
 }
 
 .bckg_1 {
-  background-image: url(../../public/image/A\ la\ française.jpg);
+  background-image: url(../../public/image/Alafrancaise.jpg);
   background-size: cover;
 }
 
 .bckg_2 {
-  background-image: url(../../public/image/La\ note\ enchantée.jpg);
+  background-image: url(../../public/image/Lanoteenchantee.jpg);
   background-size: cover;
 }
 
 .bckg_3 {
-  background-image: url(../../public/image/La\ palette\ de\ goût.jpg);
+  background-image: url(../../public/image/Lapalettedegout.jpg);
   background-size: cover;
 }
 
 .bckg_4 {
-  background-image: url(../../public/image/Le\ delice\ des\ sens.jpg);
+  background-image: url(../../public/image/Ledelicedessens.jpg);
   background-size: cover;
 }
 
@@ -543,16 +542,16 @@ a {
 }
 
 .anim_1 {
-  animation: menu-apparition 0.5s 3s both;
+  animation: menu-apparition 0.5s 0.2s both;
 }
 .anim_2 {
-  animation: menu-apparition 0.6s 3s both;
+  animation: menu-apparition 0.6s 0.2s both;
 }
 .anim_3 {
-  animation: menu-apparition 0.7s 3s both;
+  animation: menu-apparition 0.7s 0.2s both;
 }
 .anim_4 {
-  animation: menu-apparition 0.8s 3s both;
+  animation: menu-apparition 0.8s 0.2s both;
 }
 
 .card {
