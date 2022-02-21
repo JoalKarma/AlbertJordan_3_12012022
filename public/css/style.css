@@ -53,6 +53,27 @@
     opacity: 1;
   }
 }
+.bannieretop{
+  width: 100%;
+  height: 30px;
+  color: white;
+  background-color: #800;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;       
+}
+.bannieretop > a{
+  color: white;
+  text-decoration: none;
+}
+.joaport{
+  height: 90px;
+}
+@media (max-width:768px){
+  .bannieretop > p{
+    display: none;
+  }
+}
 .loader {
   position: relative;
   position: absolute;
